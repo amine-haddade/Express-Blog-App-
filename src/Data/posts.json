@@ -3,7 +3,8 @@
     "id": 1,
     "title": "title of first post",
     "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like",
-    "createdAt": "2025-08-13T09:46:05.518Z"
+    "createdAt": "2025-08-13T09:46:05.518Z",
+    "updatedAt": "2025-08-14T11:50:09.270Z"
   },
   {
     "id": 2,
@@ -13,9 +14,14 @@
   },
   {
     "id": 3,
-    "title": "Lorem Ipsum is that  updated 22222",
+    "title": "Lorem Ipsum is that  updated 2",
     "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like",
-    "createdAt": "2025-08-13T09:48:46.557Z",
-    "updatedAt": "2025-08-13T09:52:50.937Z"
+    "createdAt": "2025-08-13T09:48:46.557Z"
+  },
+  {
+    "id": 4,
+    "title": "nada lhame9a",
+    "createdAt": "2025-08-13T11:04:16.732Z",
+    "updatedAt": "2025-08-14T11:27:08.322Z"
   }
 ]
