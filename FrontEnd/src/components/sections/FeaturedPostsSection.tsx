@@ -140,7 +140,7 @@ const FeaturedPostsSection: React.FC = () => {
                 <p className={`text-sm leading-relaxed ${
                   isDark ? 'text-slate-300' : 'text-slate-600'
                 }`}>
-                  {index === 0 ? post.excerpt : `${post.excerpt.slice(0, 100)}...`}
+                  {index === 0 ? post.excerpt : `${post?.excerpt?.slice(0, 100)}...`}
                 </p>
                 
                 <div className={`flex items-center justify-between pt-2 text-sm ${

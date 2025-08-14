@@ -4,6 +4,7 @@ import { store } from './store';
 import LandingPage from './pages/LandingPage';
 import BlogPage from './pages/BlogPage';
 import AdminDashboard from './pages/AdminDashboard';
+import Insights from './pages/Insights';
 import Navbar from './components/Navbar';
 import { useAppSelector } from './hooks/useAppSelector';
 
@@ -31,6 +32,9 @@ const AppContent: React.FC = () => {
         )}
         {currentPage === 'admin' && (
           <AdminDashboard />
+        )}
+        {currentPage === 'insights' && (
+          <Insights />
         )}
        
       </main>
