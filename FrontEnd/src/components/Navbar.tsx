@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, Settings, Moon, Sun, FileText, Feather } from 'lucide-react';
+import { Home, BookOpen, Settings, Moon, Sun, FileText, Feather, BarChart3 } from 'lucide-react';
 import { useAppSelector } from '../hooks/useAppSelector';
 import { useAppDispatch } from '../hooks/useAppDispatch';
 import { setCurrentPage, toggleTheme } from '../store/slices/uiSlice';
@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   /**
    * Gère la navigation vers une page
    */
-  const handleNavigation = (page: 'landing' | 'blog' | 'admin' ) => {
+  const handleNavigation = (page: 'landing' | 'blog' | 'admin' | 'insights' ) => {
     dispatch(setCurrentPage(page));
   };
 
@@ -102,6 +102,20 @@ const Navbar: React.FC = () => {
             >
               <Settings className="w-4 h-4" />
               <span className="hidden sm:block font-medium">Admin</span>
+            </button>
+
+            <button
+              onClick={() => handleNavigation('insights')}
+              className={`px-4 py-2 rounded-full flex items-center space-x-2 transition-all duration-300 ${
+                currentPage === 'insights'
+                  ? 'bg-gradient-to-r from-blue-500 to-cyan-600 text-white shadow-lg shadow-blue-500/25'
+                  : isDark
+                  ? 'text-slate-300 hover:text-white hover:bg-slate-800'
+                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+              }`}
+            >
+              <BarChart3 className="w-4 h-4" />
+              <span className="hidden sm:block font-medium">Insights</span>
             </button>
 
             <button

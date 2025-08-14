@@ -195,7 +195,7 @@ const BlogPage: React.FC = () => {
                     <p className={`text-sm leading-relaxed ${
                       isDark ? 'text-slate-300' : 'text-slate-600'
                     }`}>
-                      {isLarge ? post.excerpt : `${post.excerpt.slice(0, 80)}...`}
+                      {isLarge ? post?.excerpt : `${post?.excerpt?.slice(0, 80)}...`}
                     </p>
 
                     <div className={`flex items-center justify-between pt-2 text-xs ${

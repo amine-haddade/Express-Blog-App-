@@ -22,6 +22,13 @@
     "id": 4,
     "title": "nada lhame9a",
     "createdAt": "2025-08-13T11:04:16.732Z",
-    "updatedAt": "2025-08-14T11:27:08.322Z"
+    "updatedAt": "2025-08-14T19:20:41.323Z",
+    "content": "Pas de contenu disponible mais je dois ajouter plus de content"
+  },
+  {
+    "id": 5,
+    "title": "test test",
+    "content": "test conten",
+    "createdAt": "2025-08-14T19:37:37.816Z"
   }
 ]

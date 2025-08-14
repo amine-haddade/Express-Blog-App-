@@ -4,10 +4,11 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
  * Interface pour l'état de l'interface utilisateur
  */
 interface UIState {
-  currentPage: 'landing' | 'blog' | 'admin' ;
+  currentPage: 'landing' | 'blog' | 'admin' | 'singlePost' | 'insights';
   isDark: boolean;
   sidebarOpen: boolean;
   modalOpen: boolean;
+  selectedPostId: number | null;
   notifications: Array<{
     id: string;
     message: string;
@@ -23,6 +24,7 @@ const initialState: UIState = {
   isDark: false,
   sidebarOpen: false,
   modalOpen: false,
+  selectedPostId: null,
   notifications: [],
 };
 
@@ -34,8 +36,14 @@ const uiSlice = createSlice({
   initialState,
   reducers: {
     // Action pour changer de page
-    setCurrentPage: (state, action: PayloadAction<'landing' | 'blog' | 'admin' >) => {
+    setCurrentPage: (state, action: PayloadAction<'landing' | 'blog' | 'admin' | 'singlePost' | 'insights'>) => {
       state.currentPage = action.payload;
+    },
+
+    // Action pour naviguer vers un post spécifique
+    navigateToPost: (state, action: PayloadAction<number>) => {
+      state.currentPage = 'singlePost';
+      state.selectedPostId = action.payload;
     },
 
     // Action pour basculer le mode sombre
@@ -86,6 +94,7 @@ const uiSlice = createSlice({
 
 export const {
   setCurrentPage,
+  navigateToPost,
   toggleTheme,
   setTheme,
   toggleSidebar,
